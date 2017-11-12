@@ -1,0 +1,14 @@
+Made CSV by taking aoe_bacs_stats.html, 
+Remove all <tbody> and <table> tags
+Search Replace all <tr></tr> with newline character (\n)
+remove all <td>
+Search-Replace all </td> with , (CSV delimiter)
+Added prodution location to end of each line in each section. e.g. Barracks,
+converted all / to , to split melee and pierce amor into separate columns
+Added auto incrementing list to start of each row to give ID
+Gave each cost an ID to link to cost table
+
+Costs table consists of current data, with 0 added where resource not required, in the format F, W, G
+
+Imported and Exported as SQL
+
